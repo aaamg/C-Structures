@@ -26,6 +26,10 @@ typedef struct {
 
 } identification;
 
+int a[3][4] = {{1, 2, 3, 4},
+              {5, 6, 7, 8},
+              {9, 10, 11, 12}};
+
 int main(void){
     struct address andrew;
     andrew.zip = 77777;
@@ -35,7 +39,10 @@ int main(void){
 
     identification person1 = {"Andrew", "Garcia"};
 
-    printf("%d %s %s %s", andrew.zip, mike.street, joe.name, person1.first_name);
+    printf("%d %s %s %s %d %d", andrew.zip, mike.street, joe.name, person1.first_name, a[0][2], a[2][3]);
     return 0;
 }
+
+
+
 
