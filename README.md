@@ -1,1 +1,6 @@
 # C-Structures
+
+
+typedef struct{
+
+}
